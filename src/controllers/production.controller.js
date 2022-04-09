@@ -1,5 +1,5 @@
-//import { connection } from "../database/sql3_instance";
 import mysql from 'mysql';
+
 const dbSettings = {
     host: "localhost",
     database: "adventureworks2019",
@@ -19,6 +19,4 @@ export const getProducts = (req, res) => {
         }
         
     });
-    //res.json(result);
 };
-// export default getProducts;
