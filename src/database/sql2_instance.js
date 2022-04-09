@@ -2,7 +2,7 @@ import sql from 'mssql';
 
 const dbSettings = {
     user: 'sa',
-    password: 'a%IXYJ7%tU6Fh',
+    password: '%IXYJ7%tU6Fh',
     server: 'localhost\\MSSQL2',
     database: 'AdventureWorks2019_Sales',
     options: {
@@ -14,8 +14,8 @@ const dbSettings = {
 export async function getConnection(){
     try {
         const pool = await sql.connect(dbSettings);
-        return pool
+        return pool;
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 };

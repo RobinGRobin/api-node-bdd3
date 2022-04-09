@@ -5,6 +5,9 @@ const app = express();
 
 app.set('port', config.port);
 
+app.get("/", (req,res) => {
+    res.send("WELCOME");
+});
 app.use(salesRoutes);
 
 export default app;
