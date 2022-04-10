@@ -7,3 +7,11 @@ export const getOrderDetail = async (req, res) => {
     // console.log(result)
     res.json(result);
 };
+/*
+export const getSpecialOffer = (req, res) => {
+    const _id = req.params;
+    const _query = `select Description from AdventureWorks2019_Sales.Sales.SpecialOffer where `;
+    const pool = await getConnection();
+    const result = await pool.request().query(_query,[_id]);
+    return result;
+}*/

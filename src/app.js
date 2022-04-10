@@ -1,7 +1,7 @@
 import express from "express";
 import config from "./config";
 import salesRoutes from "./routes/sales.routes";
-import productionRoutes from "./routes/productionRoutes";
+import productionRoutes from "./routes/production.routes";
 const app = express();
 
 app.set('port', config.port);
